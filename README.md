@@ -1,11 +1,11 @@
 <h1 align="center">Airbnb Rio de Janeiro - Análise e predição do tipo de propriedade e do preço diário de estadia</h1>
 <p align="center">
-  <img width="300px" heigth="300px" src="https://github.com/Gttz/airbnb-rio/blob/main/Images/airbnb-rio.jpg">
+  <img src="https://github.com/Gttz/airbnb-rio/blob/main/images/airbnb-rio.jpg">
 </p>
 
 ## :link: Deploy do modelo
 
-![deploy airbnb-rio gif](https://github.com/Gttz/airbnb-rio/blob/main/Images/streamlit.gif)
+![deploy airbnb-rio gif](https://github.com/Gttz/airbnb-rio/blob/main/images/streamlit.gif)
 
 - Deploy do modelo - [Streamlit]()
 - Jupyter Notebook - [Airbnb-rio.ipynb]()
