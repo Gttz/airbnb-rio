@@ -3,18 +3,18 @@
   <img src="https://github.com/Gttz/airbnb-rio/blob/main/images/airbnb-rio.jpg">
 </p>
 
+## :bookmark_tabs: Introdução sobre o projeto
+
+O Airbnb é um serviço online comunitário para as pessoas anunciarem, descobrirem e reservarem acomodações e meios de hospedagem. Neste dataset foi disponibilizado dados referentes a estadia (número de banheiros, número de quartos, número de camas entre outros)
+
+O objetivo deste projeto foi a realização de uma predição do tipo de propriedade e do preço diário da estadia onde primeiramente busquei entender os dados para realizar o pré processamento dos dados (remoção de colunas irrelevantes, tratamento de valores faltantes (NaN), tratamento de valores inconsistentes, filtragem de dados, etc), análise exploratória dos dados, criação dos modelos de classificação e regressão, comparação entre os modelos, cross-validation, ajuste de hiperparâmetros (RandomizerSearchCV e GridSearchCV) e por fim, o teste final na base de teste. Após a escolha do melhor modelo, foi realizado um Deploy do projeto utilizando a biblioteca Streamlit.
+
 ## :link: Deploy do modelo
 
 ![deploy airbnb-rio gif](https://github.com/Gttz/airbnb-rio/blob/main/images/streamlit.gif)
 
 - Deploy do modelo - [Streamlit]()
 - Jupyter Notebook - [Airbnb-rio.ipynb]()
-
-## :bookmark_tabs: Introdução sobre o projeto
-
-O Airbnb é um serviço online comunitário para as pessoas anunciarem, descobrirem e reservarem acomodações e meios de hospedagem. Neste dataset foi disponibilizado dados referentes a estadia (número de banheiros, número de quartos, número de camas entre outros)
-
-O objetivo deste projeto era a realização de uma predição do tipo de propriedade e do preço diário da estadia utilizando modelos de Machine Learning e Deep Learning. Levando isso em consideração, há dois tipos de problemas neste projeto, chamados de classificação e regressão.
 
 ## :bar_chart: Resultado dos modelos
 
