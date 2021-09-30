@@ -7,8 +7,8 @@
 
 ![deploy airbnb-rio gif](https://github.com/Gttz/airbnb-rio/blob/main/images/streamlit.gif)
 
-- Deploy do modelo - [Streamlit]()
-- Jupyter Notebook - [Airbnb-rio.ipynb]()
+- Deploy do modelo - [Streamlit](https://share.streamlit.io/gttz/airbnb-rio/main/apps/main.py)
+- Jupyter Notebook - [Airbnb-rio.ipynb](https://nbviewer.jupyter.org/github/Gttz/airbnb-rio/blob/main/notebooks/Airbnb-rio.ipynb)
 
 ## :paperclips: Sumário do READ-ME
 
@@ -55,7 +55,7 @@ O nosso dataset inicialmente tinha 74 colunas presentes, optei em selecionar 22 
     property_type               - Tipo de propriedade (onde seria a nossa variável-alvo de classificação)
     Price                       - Preço da diária de estadia (onde seria a nossa variável-alvo de regressão)
 
-## :bar: 3. Pré-processamento e Manipulação dos dados
+## :bookmark_tabs: 3. Pré-processamento e Manipulação dos dados
 
 Na etapa de pré-processamento é preciso realizar a manipulação e tratamento dos dados. Esta etapa é considerada uma das mais importantes em projetos de Data Science, pois considerando casos reais os dados dificilmente virão tratados, limpos e organizados. Considerando o nosso resultado final, os modelos de Machine Learning podem variar de resultado dependendo de como o Cientista de Dados tratou e manipulou estes dados. Esta etapa é considerada a mais trabalhosa em um projeto e, devemos ter atenção a todos os detalhes possíveis.
 
