@@ -193,15 +193,7 @@ Para isso, utilizaremos o ``seaborn`` e utilizaremos o mapa de calor que resumin
 
 ![image](https://user-images.githubusercontent.com/61298783/135530347-0414699d-b6b7-4a76-ac9b-e28470f43475.png)
 
-Analisando apenas a nossa váriavel-alvo price, podemos notar que as correlações com as colunas númericas estão bem baixas. Agora vamos ver as nossas variáveis-categóricas:
-
-![image](https://user-images.githubusercontent.com/61298783/135530463-4ec1d0b2-c328-412e-b265-114851f3c3d4.png)
-
-Podemos observar no mapa de calor acima que a nossa coluna ``price`` possui uma correlação positiva com o tipo de propriedade de apartamento, já para casa/casa possui uma correlação negativa. Já para a correlação de ``price`` para a região, temos uma correlação positiva apenas na Zona Oeste (porém baixa).
-
-![image](https://user-images.githubusercontent.com/61298783/135530513-fc99da6c-db03-4c87-9454-aed0cf1e8a9e.png)
-
-Na correlação de price para as colunas categóricas a maioria possui valores negativos, e os que estão positivos possuem uma correlação bem baixa.
+Analisando apenas a nossa váriavel-alvo price, podemos notar que as correlações com as colunas númericas estão bem baixas.
 
 ### 4.3 Dados Geoespaciais Mulivariados
 
