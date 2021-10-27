@@ -7,6 +7,9 @@ def classification_regression_features():
 
     regiao = st.sidebar.selectbox('Região', ['Zona Sul', 'Zona Oeste', 'Zona Norte', 'Zona Central'])
 
+    classe_social = st.sidebar.selectbox('Classe-Social do Bairro', ['Classe Média-Alta', 'Classe Média', 'Classe Alta',
+                                                                     'Classe Média-Baixa', 'Classe Baixa'])
+
     banheiros = st.sidebar.selectbox('Banheiros', ['1', '2', '3', '4+'])
 
     quartos = st.sidebar.selectbox('Quartos', ['1', '2', '3', '4+'])
@@ -48,6 +51,7 @@ def classification_regression_features():
 
     dataset = {
         'neighbourhood_region': regiao,
+        'district_social_class': classe_social,
         'latitude': latitude,
         'longitude': longitude,
         'accommodates': acomodacoes,
