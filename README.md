@@ -153,6 +153,10 @@ Algumas observações:
 - Na coluna ``neighbourhood_cleansed`` temos 149 bairros diferentes (MUITOS bairros)
 - Na coluna ``property_type`` temos 83 tipos de propriedades diferentes (MUITOS tipos de propriedades)
 
+Na coluna neighbourhood_cleansed tive a idéia de pegar as informações de cada bairro sobre a classe-média-social e, realizar a criação de uma nova coluna com o nome de district_social_class.
+
+![image](https://user-images.githubusercontent.com/61298783/139005014-d294a891-ac61-49b8-9e1c-74bc51ff986f.png)
+
 Na coluna neighbourhood_cleansed temos 149 bairros diferentes. Após realizar algumas pesquisas, tive a idéia de criar uma nova coluna com o nome de neighbourhood_region com as zonas de cada bairro. As zonas estão na imagem abaixo:
 
 ![image](https://user-images.githubusercontent.com/61298783/135529633-9bfbeff9-7354-4eac-b351-7c8782bd1694.png)
@@ -199,6 +203,10 @@ Analisando apenas a nossa váriavel-alvo price, podemos notar que as correlaçõ
 
 Para a nossa visualização se tornar mais completa, vamos utilizar dados geoespaciais utilizando as informações das colunas latitude e longitude. O interessante aqui é entender se a geografia influencia nas características. Para realizarmos esta análise utilizaremos a biblioteca ``plotly``.
 
+![image](https://user-images.githubusercontent.com/61298783/139005189-686aacf2-9327-44f0-9c92-975f148b990c.png)
+
+Como podemos observar no gráfico acima é que as classes sociais Média, Média-Alta e Alta tem mais tendência de se estar próximo as praias. Já as de Média-Baixa e Baixa estão mais espalhados pelas regiões.
+
 ![image](https://user-images.githubusercontent.com/61298783/135530754-4cd5612e-61f6-4091-bdf7-84193b54effb.png)
 
 Como podemos observar no gráfico acima é que os tipos de propriedade de apartamentos tem uma maior concentração nas praias, fazendo total sentido pois as pessoas que alugam os airbnb's geralmente estão passando um tempo de férias. Já os do tipo casa/ quartos estão mais espalhados pelo mapa.
@@ -223,11 +231,13 @@ Como podemos observar, os bairros com os maiores preços são: Osvaldo Cruz, Inh
 
 Já os bairros com os menores preços são: Vila Kosmos, Senador Camará, Honório Gurgel, Galeão e Coelho Neto.
 
+![image](https://user-images.githubusercontent.com/61298783/139005745-a18693db-c523-4171-8d54-353bd80cee55.png)
+
+De fato, de acordo com a classe-social dos bairros, quanto maior for a classe-social do bairro maior será o seu preço e quanto menor, menor é o preço.
+
 ![image](https://user-images.githubusercontent.com/61298783/135531152-c80da067-e7e6-43a1-9707-25ed2a754735.png)
 
 Podemos observar que as zonas Sul e Oeste possuem uma maior média de preços, porém também devemos levar em consideração que temos altos números de registros nestas zonas e, talvez esteja influenciando os preços.
-
-Observação: Também houve outras perguntas que, para não ficar muito extenso optei em não colocar no README.
 
 ## :hammer_and_wrench: 5. Pré-processamento para os modelos
 
@@ -293,7 +303,7 @@ Os resultados finais do projeto estão logo a seguir.
 
 |Modelo|Acurácia|ROC|F1-Score
 |-------|----|----|----|
-|Decision Tree (Baseline) |80%|78%|70%|
+|Decision Tree (Baseline) |79%|77%|69%|
 |XGBoost |85%|84%|78%|
 |Light Gradient Boosting (Pycaret) |84%|91%|75%|
 
@@ -302,8 +312,8 @@ Os resultados finais do projeto estão logo a seguir.
 |Modelo|MAE|RMSE|R²
 |-------|----|----|----|
 |Linear Regression (Baseline)|	145.46|198.55|0.37|
-|Light Gradient Boosting |130.86|184.62|0.41|
-|Light Gradient Boosting (Pycaret) |131.43|183.89|0.42|
+|Light Gradient Boosting |131.02|184.41|0.41|
+|Light Gradient Boosting (Pycaret) |131.60|183.89|0.42|
 
 Com isso, concluimos que primeiramente entendemos como so dados estavam e realizamos o pré-processamento dos dados logo em seguida, a remoção de colunas irrelevantes, tratamento de valores faltantes (NaN), tratamento de valores inconsistentes, filtragem de dados e por fim, a criação dos modelos de Classificação e Regressão. Os nossos modelos de Classificação de fato desempenharam bem mas também o modelo ainda poderia ter sido melhor. Já nos modelos de Regressão consegui atingir um bom desempenho mas nada de tão grandioso, onde também poderia ter sido melhor. Por hora, posso dizer que o projeto está finalizado e ele foi de bastante aprendizado e obrigado por me acompanhar neste projeto :D
 
