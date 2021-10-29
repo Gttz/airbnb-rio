@@ -8,7 +8,7 @@
 ![deploy airbnb-rio gif](https://github.com/Gttz/airbnb-rio/blob/main/images/streamlit.gif)
 
 - Deploy do modelo - [Streamlit](https://share.streamlit.io/gttz/airbnb-rio/main/apps/main.py)
-- Jupyter Notebook - [Airbnb-rio.ipynb](https://nbviewer.jupyter.org/github/Gttz/airbnb-rio/blob/e1010ee1e386c5c5bf365b6bb42abbc06440135d/notebooks/Airbnb-rio.ipynb)
+- Jupyter Notebook - [Airbnb-rio.ipynb](https://nbviewer.org/github/Gttz/airbnb-rio/blob/main/notebooks/Airbnb-rio.ipynb)
 
 ## :paperclips: Sumário do READ-ME
 
